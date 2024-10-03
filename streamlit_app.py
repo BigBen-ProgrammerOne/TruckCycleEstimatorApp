@@ -161,7 +161,7 @@ if st.button('Compute'):
         'DECK STITCH': 'PRECAST/RETAINING WALL/ABUTMENT',
         'SHEAR KEY/SHEAR BLOCK': 'BEAM'
     }
-    df['STRUCTURE FAMILY'] = df['STRUCTURE FAMILY'].replace(structure_dict)
+    df_features['STRUCTURE FAMILY'] = df_features['STRUCTURE FAMILY'].replace(structure_dict)
     with open(
         'pickle_files/label_encoders/placement_label_encoder.pkl',
         'rb') as f:
